@@ -1,6 +1,12 @@
+#include <windows.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
+
+    // 콘솔 출력 코드 페이지를 UTF-8로 설정
+    SetConsoleOutputCP(CP_UTF8);
+
     int choice;
     
     printf("원하는 기능을 선택하세요:\n");
@@ -47,5 +53,6 @@ int main() {
         printf("잘못된 선택입니다.\n");
     }
     
+    system("pause");  // 종료 전 일시정지    
     return 0;
 }
